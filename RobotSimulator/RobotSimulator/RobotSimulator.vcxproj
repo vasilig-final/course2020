@@ -159,11 +159,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="RobotSimulator.cpp" />
+    <ClCompile Include="SingleSimRun.cpp" />
+    <ClCompile Include="House.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AlgoInterface.h" />
     <ClInclude Include="HouseLoader.h" />
     <ClInclude Include="House.h" />
+    <ClInclude Include="SingleSimRun.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

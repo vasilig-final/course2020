@@ -28,16 +28,16 @@ public:
 	virtual int stepsLeft() const = 0;
 };
 
-/*class RobotAlgorithm
+class RobotAlgorithm
 {
 public:
 	template<typename RobotRep>
-	void init(RobotRep& robot, std::map<std::string, int> config);
+	void init(RobotRep& robot, std::map<std::string, int> config) {}
 
-	Direction nextStep(Direction lastMove, bool& finish);
+	virtual Direction nextStep(Direction lastMove, bool& finish) = 0;
 
-	std::string const& getName() const;
-	std::string const& getDescription() const;
-};*/
+	virtual std::string const& getName() const = 0;
+	virtual std::string const& getDescription() const = 0;
+};
 
 #endif

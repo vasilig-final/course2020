@@ -4,10 +4,13 @@
 #pragma once
 
 #include <cstdint>
+#include "AlgoInterface.h"
 
 struct Position
 {
-	size_t x, y;
+	int x, y;
+
+	void update(Direction d);
 };
 
 class House
@@ -21,10 +24,11 @@ public:
 	size_t getHeight() const;
 	size_t getWidth() const;
 
-	CellContent get(size_t x, size_t y) const;
-	void set(size_t x, size_t y, CellContent content);
+	CellContent get(Position const& p) const;
+	void set(Position const& p, CellContent content);
 
 	Position getDockPosition() const;
+	size_t getMaxSteps() const;
 };
 
 #endif
