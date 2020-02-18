@@ -160,6 +160,11 @@
   <ItemGroup>
     <ClCompile Include="RobotSimulator.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AlgoInterface.h" />
+    <ClInclude Include="HouseLoader.h" />
+    <ClInclude Include="House.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

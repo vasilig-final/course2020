@@ -4,51 +4,6 @@
 #include <iostream>
 #include <fmt/format.h> 
 
-/*enum class Direction
-{
-	Up,
-	Down,
-	Left,
-	Right,
-};
-
-enum class StepAction
-{
-	Up,
-	Down,
-	Left,
-	Right,
-	Stay,
-	Finish
-};
-
-struct RobotConfig
-{
-	unsigned int max_steps;
-	unsigned int battery_capacity;
-	unsigned int drain_per_step;
-	unsigned int charge_per_step;
-};
-
-class ISensors
-{
-public:
-	virtual bool isWall(Direction dir) = 0;
-	virtual bool isCurrentStopClean() = 0;
-};
-
-class IAlgorithm
-{
-public:
-	virtual StepAction getNextStep() = 0;
-};
-
-class IAlgorithmFactory
-{
-public:
-	virtual IAlgorithm create(RobotConfig const& cfg, ISensors const& sensors) = 0;
-};*/
-
 int main()
 {
     std::cout << "Hello World!\n";
