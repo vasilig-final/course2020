@@ -5,6 +5,11 @@
 
 #include <cstdint>
 
+struct Position
+{
+	size_t x, y;
+};
+
 class House
 {	
 public:
@@ -18,6 +23,8 @@ public:
 
 	CellContent get(size_t x, size_t y) const;
 	void set(size_t x, size_t y, CellContent content);
+
+	Position getDockPosition() const;
 };
 
 #endif
