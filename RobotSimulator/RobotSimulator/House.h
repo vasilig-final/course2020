@@ -10,7 +10,8 @@ struct Position
 {
 	int x, y;
 
-	void update(Direction d);
+	Position operator+(Direction d) const;
+	Position& operator+=(Direction d);
 };
 
 class House
@@ -18,6 +19,7 @@ class House
 public:
 	using CellContent = uint8_t;
 	
+	static constexpr CellContent CLEAN = 0;
 	static constexpr CellContent WALL = 0xff;
 	static constexpr CellContent DOCK_STATION = 0xfe;
 
