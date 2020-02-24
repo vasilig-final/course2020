@@ -31,6 +31,14 @@ public:
 
 	Position getDockPosition() const;
 	size_t getMaxSteps() const;
+
+protected:
+
+	int _maxSteps;
+	int _rows;
+	int _cols;
+	int map[][];
+		 
 };
 
 #endif

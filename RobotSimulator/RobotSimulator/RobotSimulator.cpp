@@ -3,11 +3,11 @@
 
 #include <iostream>
 #include <fmt/format.h> 
+#include "HouseLoader.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
-	fmt::print("He{}el\n", 5);
+	std::unique_ptr<House> hl = HouseLoader::loadFromFile("house1.txt");
 	return 0;
 }
 
