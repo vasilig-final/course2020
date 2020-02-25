@@ -1,0 +1,8 @@
+MyHouse
+50
+5,6
+WW WWW
+ D 12W
+W1234 
+W 0  W
+W WWWW
